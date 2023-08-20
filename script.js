@@ -27,7 +27,7 @@ const resetScores = function () {
 
 let scores, currentScore, activePlayer, isPlaying, isRoll;
 
-// New game functionality
+// New game functionality | set all variables to initial value
 
 const initialization = function () {
   // Hide dice at beginning of game
@@ -81,7 +81,7 @@ rollBtn.addEventListener('click', function () {
     system.classList.remove('smooth');
     //1 . Generating a random dice roll
     let dice = Math.trunc(Math.random() * 6) + 1;
-
+    console.log(dice);
     //2. Display dice images
     diceEl.classList.remove('hidden');
     diceEl.src = `dice-${dice}.png`;
